@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+    color: white;
+}
+
+.container-form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 70%;
+    background-color: rgb(55, 56, 55);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    margin-top: 1rem;
+}
+
+.container-form .response {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+    height: 75%;
+    border-radius: 0.5rem;
+    margin-bottom: 10%;
+    overflow-y: scroll;
+    background-color: #444b54;
+    padding: 1rem;
+}
+
+.response span,
+p {
+    width: 75%;
+    margin: 0.5rem 0;
+    background-color: #282c34;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container-form .inputUser,
+.containerInputInicial .inputUserInicial {
+    outline: none;
+    border: none;
+    background-color: #444b54;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 40px);
+    margin: 10px;
+}
+
+.container-form #inputButton,
+.containerInputInicial #inputButtonInical {
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.container-form #inputButton:hover,
+.containerInputInicial #inputButtonInical:hover {
+    background-color: #21a1f1;
+}
+
+.container-form .containerInput,
+.containerInputInicial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+}
+
+.container-form #userMessage,
+.containerInputInicial #contextControl {
+    width: 80%;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+.contaier-context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 20%;
+    background-color: darkseagreen;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+
+#recomecar {
+    padding: 10px;
+    background-color: #323232;
+    color: white;
+    border-radius: 0.4rem;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.3rem;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.3s ease;
+}
+
+#recomecar:hover {
+    opacity: 80%;
+}
+
